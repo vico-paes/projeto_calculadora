@@ -16,7 +16,7 @@ import org.junit.jupiter.api.TestMethodOrder;
  * <p>Cada teste exibe no console a entrada utilizada, o resultado esperado
  * e o resultado obtido, além de validar o resultado com asserções do JUnit.</p>
  *
- * @author Aluno
+ * @author Vinicius Paes Lima
  * @version 1.0
  */
 @DisplayName("Testes da Calculadora")
@@ -29,12 +29,17 @@ class TesteCalculadora {
     /** Instância da calculadora testada, recriada antes de cada teste. */
     private Calculadora calculadora;
 
+    /** Construtor usado pelo JUnit para instanciar a classe de testes. */
+    TesteCalculadora() {
+    }
+
     /** Cria uma calculadora nova antes de cada teste. */
     @BeforeEach
     void prepararCalculadora() {
         calculadora = new Calculadora();
     }
 
+    /** Caso de teste 1: Soma: 10 + 5 = 15. */
     @Test
     @Order(1)
     @DisplayName("Soma: 10 + 5 = 15")
@@ -45,6 +50,7 @@ class TesteCalculadora {
         assertEquals(esperado, obtido, DELTA);
     }
 
+    /** Caso de teste 2: Soma com negativo: -8 + 3 = -5. */
     @Test
     @Order(2)
     @DisplayName("Soma com negativo: -8 + 3 = -5")
@@ -55,6 +61,7 @@ class TesteCalculadora {
         assertEquals(esperado, obtido, DELTA);
     }
 
+    /** Caso de teste 3: Subtração: 10 - 5 = 5. */
     @Test
     @Order(3)
     @DisplayName("Subtração: 10 - 5 = 5")
@@ -65,6 +72,7 @@ class TesteCalculadora {
         assertEquals(esperado, obtido, DELTA);
     }
 
+    /** Caso de teste 4: Subtração com resultado negativo: 5 - 10 = -5. */
     @Test
     @Order(4)
     @DisplayName("Subtração com resultado negativo: 5 - 10 = -5")
@@ -75,6 +83,7 @@ class TesteCalculadora {
         assertEquals(esperado, obtido, DELTA);
     }
 
+    /** Caso de teste 5: Multiplicação: 10 * 5 = 50. */
     @Test
     @Order(5)
     @DisplayName("Multiplicação: 10 * 5 = 50")
@@ -85,6 +94,7 @@ class TesteCalculadora {
         assertEquals(esperado, obtido, DELTA);
     }
 
+    /** Caso de teste 6: Multiplicação por zero: 10 * 0 = 0. */
     @Test
     @Order(6)
     @DisplayName("Multiplicação por zero: 10 * 0 = 0")
@@ -95,6 +105,7 @@ class TesteCalculadora {
         assertEquals(esperado, obtido, DELTA);
     }
 
+    /** Caso de teste 7: Divisão exata: 10 / 5 = 2. */
     @Test
     @Order(7)
     @DisplayName("Divisão exata: 10 / 5 = 2")
@@ -105,6 +116,7 @@ class TesteCalculadora {
         assertEquals(esperado, obtido, DELTA);
     }
 
+    /** Caso de teste 8: Divisão com decimal: 7 / 2 = 3.5. */
     @Test
     @Order(8)
     @DisplayName("Divisão com decimal: 7 / 2 = 3.5")
@@ -115,6 +127,7 @@ class TesteCalculadora {
         assertEquals(esperado, obtido, DELTA);
     }
 
+    /** Caso de teste 9: Divisão por zero: 10 / 0 lança ArithmeticException. */
     @Test
     @Order(9)
     @DisplayName("Divisão por zero: 10 / 0 lança ArithmeticException")
@@ -125,6 +138,7 @@ class TesteCalculadora {
         assertEquals("Divisão por zero não é permitida.", erro.getMessage());
     }
 
+    /** Caso de teste 10: Operação inválida: 10 % 5 lança IllegalArgumentException. */
     @Test
     @Order(10)
     @DisplayName("Operação inválida: 10 % 5 lança IllegalArgumentException")
@@ -135,6 +149,7 @@ class TesteCalculadora {
         assertEquals("Operação inválida: %. Use +, -, * ou /.", erro.getMessage());
     }
 
+    /** Caso de teste 11: Operação nula: 10 null 5 lança IllegalArgumentException. */
     @Test
     @Order(11)
     @DisplayName("Operação nula: 10 null 5 lança IllegalArgumentException")
