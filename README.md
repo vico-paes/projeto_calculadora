@@ -12,6 +12,7 @@
 | **Contexto** | FinançApp — aplicativo mobile de controle de finanças pessoais (startup fictícia) |
 | **Aluno** | Vinicius Paes Lima |
 | **RA** | 252015 |
+| **Curso** | Análise e Desenvolvimento de Sistemas (ADS) |
 | **Disciplina** | UX/UI |
 | **Professor** | Daniel Ohata |
 | **Semestre** | 2026.2 |
