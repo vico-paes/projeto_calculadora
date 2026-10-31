@@ -35,7 +35,7 @@ public class Calculadora {
     /** Símbolo da operação de divisão: {@value}. */
     public static final String DIVISAO = "/";
 
-    /** Mensagem da exceção lançada quando o divisor é zero: {@value}. */
+    /** Mensagem da exceção lançada quando o divisor é zero. */
     static final String MENSAGEM_DIVISAO_POR_ZERO = "Divisão por zero não é permitida.";
 
     /**
