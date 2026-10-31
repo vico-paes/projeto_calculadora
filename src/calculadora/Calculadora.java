@@ -17,7 +17,7 @@ package calculadora;
  * double total = calculadora.calc(1200, 3, Calculadora.DIVISAO); // 400.0
  * }</pre>
  *
- * @author Nome do Aluno
+ * @author Vinicius Paes Lima
  * @version 2.0
  * @since 1.0
  */

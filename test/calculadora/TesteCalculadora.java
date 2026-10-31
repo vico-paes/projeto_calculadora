@@ -16,7 +16,7 @@ import org.junit.jupiter.api.TestMethodOrder;
  * <p>Cada teste exibe no console a entrada utilizada, o resultado esperado
  * e o resultado obtido, além de validar o resultado com asserções do JUnit.</p>
  *
- * @author Nome do Aluno
+ * @author Vinicius Paes Lima
  * @version 1.0
  */
 @DisplayName("Testes da Calculadora")

@@ -10,11 +10,10 @@
 |---|---|
 | **Projeto** | projeto_calculadora |
 | **Contexto** | FinançApp — aplicativo mobile de controle de finanças pessoais (startup fictícia) |
-| **Aluno** | [preencher] |
-| **RA** | [preencher] |
-| **Curso** | [preencher] |
-| **Disciplina** | [preencher] |
-| **Professor** | [preencher] |
+| **Aluno** | Vinicius Paes Lima |
+| **RA** | 252015 |
+| **Disciplina** | UX/UI |
+| **Professor** | Daniel Ohata |
 | **Semestre** | 2026.2 |
 
 ---
@@ -260,6 +259,7 @@ Histórico de commits:
 
 ```
 * Merge da branch Refatoracao na main
+* Preenche dados do aluno e regenera JavaDoc e prints
 * Adiciona README com prints dos testes e da documentacao
 * Ajusta JavaDoc da mensagem de divisao por zero e regenera docs
 * Gera documentacao HTML com JavaDoc em docs/
@@ -298,4 +298,6 @@ java -jar lib/junit-platform-console-standalone-1.11.4.jar execute -cp out -c ca
 
 ## 15. Repositório
 
-🔗 **Link do repositório:** [preencher com o link do GitHub]
+🔗 **Link do repositório:** https://github.com/vico-paes/projeto_calculadora
+
+📄 **Documentação JavaDoc online:** https://vico-paes.github.io/projeto_calculadora/

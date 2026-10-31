@@ -7,7 +7,7 @@ package calculadora;
  * e operação inválida). Os erros são tratados e exibidos como mensagem, e o
  * programa segue executando até o fim, sem ser interrompido.</p>
  *
- * @author Nome do Aluno
+ * @author Vinicius Paes Lima
  * @version 2.0
  * @since 1.0
  */
